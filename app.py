@@ -1,10 +1,10 @@
 from bottle import (post, request, response, route, run, )
 from twilio import twiml
-from twilio.rest import TwilioRestClient
+from twilio.rest import Client
 
 
 # copy in your Twilio Account SID and Auth Token from Twilio Console
-client = TwilioRestClient("your account sid", "your auth token")
+client = Client("your account sid", "your auth token")
 
 # this URL variable can be dynamic or customized later
 MMS_URL = "https://wiki.factorio.com/images/Fast_transport_belt_fulldensity.gif"
